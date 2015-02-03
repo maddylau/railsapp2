@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/about' => 'home#about'
   get '/contact' => 'home#contact'
   get '/topics' => 'topic#post', as: :topic
+  get '/comment' => 'topic#comment', as: :comment
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
